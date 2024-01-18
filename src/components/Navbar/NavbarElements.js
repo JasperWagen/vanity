@@ -6,9 +6,10 @@ export const Nav = styled.nav`
     background: #fff8ef;
     height: 30px;
     display: flex;
-    justify-content: space-evenly;
-    padding: 0.2rem calc((100vw - 1000px) / 2);
-    z-index: 12;
+    justify-content: space-around;
+    width: 100%;
+    // padding: 0.2rem calc((100vw - 1000px) / 2);
+    // z-index: 12;
 `;
  
 export const NavLink = styled(Link)`
@@ -16,7 +17,7 @@ export const NavLink = styled(Link)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 10rem;
+    // padding: 0 10rem;
     height: 100%;
     cursor: pointer;
     &.active {
@@ -27,28 +28,25 @@ export const NavLink = styled(Link)`
 export const Bars = styled(FaBars)`
     display: none;
     color: #808080;
-    @media screen and (max-width: 768px) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 75%);
-        font-size: 1.8rem;
-        cursor: pointer;
-    }
+    // @media screen and (max-width: 768px) {
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     transform: translate(-100%, 75%);
+    //     font-size: 1.8rem;
+    //     cursor: pointer;
+    // }
 `;
  
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     margin-right: -24px;
-    /* Second Nav */
-    /* margin-right: 24px; */
-    /* Third Nav */
-    /* width: 100vw;
-  white-space: nowrap; */
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
+    // @media screen and (max-width: 768px) {
+    //     display: none;
+    // }
+    width: 100%;
 `;
 
