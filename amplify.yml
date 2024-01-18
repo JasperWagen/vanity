@@ -2,11 +2,12 @@ version: 1
 # env:
 #   variables:
 #     key: value
-artifacts:
-    baseDirectory: /
-    files:
-        - '**/*'
+
 frontend:
+  artifacts:
+      baseDirectory: /
+      files:
+          - '**/*'
   phases:
     preBuild:
       commands:
